@@ -55,13 +55,15 @@ public class delAndModEnrolledButton : MonoBehaviour
 
             BMscript.pickedArrays[line_number - 1].picked_numbers.Clear();
             BMscript.current_button_number = 6;
+
+
+            BMscript.current_going_list = line_number;
         }
 
 
 
 
 
-        BMscript.current_going_list = line_number;
     }
 
 }
