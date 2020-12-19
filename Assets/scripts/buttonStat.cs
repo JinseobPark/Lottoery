@@ -52,6 +52,7 @@ public class buttonStat : MonoBehaviour
     public void ChangeToPick()
     {
         isPicked = true;
+        BMscript.Current_picked_number[button_number - 1] = true;
         BMscript.current_button_number++;
         image.sprite = PickedImage;
     }
@@ -59,6 +60,7 @@ public class buttonStat : MonoBehaviour
     public void ChangeToNope()
     {
         isPicked = false;
+        BMscript.Current_picked_number[button_number - 1] = false;
         BMscript.current_button_number--;
         image.sprite = NoPickedImage;
     }
